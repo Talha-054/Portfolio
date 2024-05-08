@@ -3,9 +3,7 @@ import aboutImg from "../assets/images/about.jpg";
 import CV from "../assets/images/CV.pdf"
 const About = () => {
   const info = [
-    { text: "Years experience", count: "04" },
-    { text: "Completed Projects", count: "24" },
-    { text: "Companies Work", count: "06" },
+    { text: "Completed Projects", count: "8" },
   ];
   info
   return (
@@ -24,7 +22,7 @@ const About = () => {
                 React, I eagerly aspire to evolve into a proficient full-stack web developer. Each challenge fuels 
                 my fervor, propelling me closer to realizing my ambitions
               </p>
-              {/* <div className="flex mt-10 items-center gap-7">
+              <div className="flex mt-10 items-center justify-start">
                 {info.map((content) => (
                   <div key={content.text}>
                     <h3 className="md:text-4xl text-2xl font-semibold text-white">
@@ -34,7 +32,7 @@ const About = () => {
                     <span className="md:text-base text-xs">{content.text}</span>
                   </div>
                 ))}
-              </div> */}
+              </div>
               <br />
               <br />
               <a href= {CV} download>

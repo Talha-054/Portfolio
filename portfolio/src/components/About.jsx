@@ -22,7 +22,7 @@ const About = () => {
                 React, I eagerly aspire to evolve into a proficient full-stack web developer. Each challenge fuels 
                 my fervor, propelling me closer to realizing my ambitions
               </p>
-              <div className="flex mt-10 items-center justify-start">
+              <div className="flex mt-10 items-center justify-center md:justify-start">
                 {info.map((content) => (
                   <div key={content.text}>
                     <h3 className="md:text-4xl text-2xl font-semibold text-white">

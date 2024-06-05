@@ -5,6 +5,8 @@ import project2 from "../assets/images/project-2.png";
 import project3 from "../assets/images/project-3.jpg";
 import project4 from "../assets/images/project-4.jpg";
 import project5 from "../assets/images/project-5.png";
+import project6 from "../assets/images/project-6.jpg";
+import project7 from "../assets/images/project-7.jpg";
 import project_person from "../assets/images/project_person.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -43,6 +45,18 @@ const Project = () => {
       github_link: "https://github.com/Talha-054/Doodle-jump",
       live_link: "https://doodle-jump-talha.vercel.app/",
     },
+    {
+      img: project6,
+      name: "Pizza shop",
+      github_link: "https://github.com/Talha-054/tailwind-project-2",
+      live_link: "https://demo-pizza.vercel.app/",
+    },
+    {
+      img: project7,
+      name: "Mahabis clone",
+      github_link: "https://github.com/Talha-054/tailwind-project",
+      live_link: "https://mahabis-clone.vercel.app/",
+    }
   ];
   return (
     <section id="projects" className="py-32 text-white">

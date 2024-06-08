@@ -40,12 +40,6 @@ const Project = () => {
       live_link: "https://currency-converter-talha.vercel.app/",
     },
     {
-      img: project5,
-      name: "Doodle Jump",
-      github_link: "https://github.com/Talha-054/Doodle-jump",
-      live_link: "https://doodle-jump-talha.vercel.app/",
-    },
-    {
       img: project6,
       name: "Pizza shop",
       github_link: "https://github.com/Talha-054/tailwind-project-2",

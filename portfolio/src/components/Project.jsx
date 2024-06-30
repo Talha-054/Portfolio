@@ -6,6 +6,7 @@ import project3 from "../assets/images/project-3.jpg";
 import project4 from "../assets/images/project-4.jpg";
 import project6 from "../assets/images/project-6.jpg";
 import project7 from "../assets/images/project-7.jpg";
+import project8 from "../assets/images/project-8.png";
 import project_person from "../assets/images/project_person.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -46,9 +47,15 @@ const Project = () => {
     },
     {
       img: project7,
-      name: "Mahabis clone",
+      name: "E-commerce store",
       github_link: "https://github.com/Talha-054/tailwind-project",
       live_link: "https://mahabis-clone.vercel.app/",
+    },
+    {
+      img: project8,
+      name: "Number System Converter",
+      github_link: "https://github.com/Talha-054/number-system-converter",
+      live_link: "https://number-system-converter-project.vercel.app/",
     }
   ];
   return (

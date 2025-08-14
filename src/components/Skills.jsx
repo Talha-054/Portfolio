@@ -17,7 +17,8 @@ import { SiVite } from "react-icons/si";
 import { SiJest } from "react-icons/si";
 import { SiTauri } from "react-icons/si";
 import { SiThreedotjs } from "react-icons/si";
-
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
@@ -28,11 +29,6 @@ const Skills = () => {
     },
     {
       logo: <RiTailwindCssFill />,
-      level: "Expert",
-      count: 100,
-    },
-    {
-      logo: <SiTypescript />,
       level: "Expert",
       count: 100,
     },
@@ -82,12 +78,17 @@ const Skills = () => {
       count: 80,
     },
     {
+      logo: <FaNodeJs />,
+      level: "Intermediate",
+      count: 75,
+    },
+    {
       logo: <FaRust />,
       level: "Intermediate",
       count: 60,
     },
     {
-      logo: [<SiBabel />, <SiJest />, <SiVite />, <SiWebpack />, <SiTauri />, <SiThreedotjs />],
+      logo: [<SiBabel />, <SiJest />, <SiVite />, <SiWebpack />, <SiTauri />, <SiThreedotjs />, <SiTypescript />, <SiExpress />],
     },
 
   ];

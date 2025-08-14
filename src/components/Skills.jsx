@@ -111,7 +111,7 @@ const Skills = () => {
                 }}
                 className="w-32 h-32 flex items-center justify-center rounded-full"
               >
-                <div className={`${Array.isArray(skill.logo) ? "text-4xl" : "text-6xl "} gap-4 w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center flex-wrap group-hover:text-cyan-600`}>
+                <div className={`${Array.isArray(skill.logo) ? "text-3xl" : "text-6xl w-28 h-28"} gap-4  bg-gray-900 rounded-full flex items-center justify-center flex-wrap group-hover:text-cyan-600`}>
                   {Array.isArray(skill.logo) ? (
                     skill.logo.map((Icon, idx) => (
                       Icon

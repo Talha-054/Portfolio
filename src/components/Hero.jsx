@@ -1,5 +1,12 @@
-import React from "react";
 import hero from "../assets/images/hero.png";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
+const socialMediaLinks = [
+  {link: "https://github.com/Talha-054", icon: <FaGithub />},
+  {link: "https://www.linkedin.com/in/muhammad-talha-84b3b32b2/", icon: <FaLinkedin />},
+]
+
 const Hero = () => {
   return (
     <section
@@ -29,16 +36,16 @@ const Hero = () => {
           >
             Contact Me
           </a>
-          {/* <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
-            {social_media?.map((icon) => (
+          <div className="mt-8 pl-2 text-3xl flex items-center md:justify-start justify-center gap-5">
+            {socialMediaLinks?.map((icon) => (
               <div
-                key={icon}
+                key={icon.link}
                 className="text-gray-600 hover:text-white cursor-pointer "
               >
-                <ion-icon name={icon}></ion-icon>
+                <a href={icon.link}>{icon.icon}</a>
               </div>
             ))}
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

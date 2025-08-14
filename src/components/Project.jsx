@@ -4,9 +4,11 @@ import project1 from "../assets/images/project-1.jpg";
 import project2 from "../assets/images/project-2.png";
 import project3 from "../assets/images/project-3.jpg";
 import project4 from "../assets/images/project-4.jpg";
-import project6 from "../assets/images/project-6.jpg";
+import project6 from "../assets/images/project-6.png";
 import project7 from "../assets/images/project-7.jpg";
 import project8 from "../assets/images/project-8.png";
+import project9 from "../assets/images/project-9.png";
+import project10 from "../assets/images/project-10.png";
 import project_person from "../assets/images/project_person.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -41,9 +43,7 @@ const Project = () => {
     },
     {
       img: project6,
-      name: "Pizza shop",
-      github_link: "https://github.com/Talha-054/tailwind-project-2",
-      live_link: "https://demo-pizza.vercel.app/",
+      name: "Sunsational Swim School",
     },
     {
       img: project7,
@@ -56,6 +56,15 @@ const Project = () => {
       name: "Number System Converter",
       github_link: "https://github.com/Talha-054/number-system-converter",
       live_link: "https://number-system-converter-project.vercel.app/",
+    },
+    {
+      img: project9,
+      name: "GSA Trucking (Admin Panel)",
+    },
+    {
+      img: project10,
+      name: "Ribit Boats (3D Customiser)",
+      live_link: "https://www.ribitboats.com/customizer",
     }
   ];
   return (
@@ -92,20 +101,20 @@ const Project = () => {
                   <img src={project_info.img} alt="" className="rounded-lg" />
                   <h3 className="text-xl my-4">{project_info.name}</h3>
                   <div className="flex gap-3">
-                    <a
+                    {project_info?.github_link && <a
                       href={project_info.github_link}
                       target="_blank"
                       className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
                     >
                       Github
-                    </a>
-                    <a
+                    </a>}
+                    {project_info?.live_link && <a
                       href={project_info.live_link}
                       target="_blank"
                       className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
                     >
                       Live Demo
-                    </a>
+                    </a>}
                   </div>
                 </div>
               </SwiperSlide>

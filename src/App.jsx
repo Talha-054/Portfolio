@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Bot />
+      {/* <Bot /> */}
       <Hero />
       <About />
       <Skills />

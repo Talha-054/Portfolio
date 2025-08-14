@@ -1,9 +1,9 @@
-import React from "react";
+import githubActivityImg from "../assets/images/github.png";
 import aboutImg from "../assets/images/about.jpg";
 import CV from "../assets/images/CV.pdf"
 const About = () => {
   const info = [
-    { text: "Completed Projects", count: "8" },
+    { text: "Completed Projects", count: "15" },
   ];
   info
   return (
@@ -17,12 +17,9 @@ const About = () => {
           <div className="p-2">
             <div className="text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto">
-                Driven by passion, filled with curiosity for the IT world, I embark on a transformative journey, 
-                transitioning from a different field to pursue my aspirations. Currently immersed in mastering 
-                React, I eagerly aspire to evolve into a proficient full-stack web developer. Each challenge fuels 
-                my fervor, propelling me closer to realizing my ambitions
+                Mid-level React/Next.js developer obsessed with coding. I breathe code, dream code, and live to build full-stack applications. From debugging to deploying, I code, code, and then code some more—turning challenges into clean, functional solutions.
               </p>
-              <div className="flex mt-10 items-center justify-center md:justify-start">
+              <div className="flex gap-2 mt-10 items-center justify-center md:justify-start">
                 {info.map((content) => (
                   <div key={content.text}>
                     <h3 className="md:text-4xl text-2xl font-semibold text-white">
@@ -32,10 +29,13 @@ const About = () => {
                     <span className="md:text-base text-xs">{content.text}</span>
                   </div>
                 ))}
+                <div className="flex justify-center items-center mt-8">
+                  <img width={500} src={githubActivityImg} />
+                </div>
               </div>
               <br />
               <br />
-              <a href= {CV} download>
+              <a href={CV} download>
                 <button className="btn-primary">Download CV</button>
               </a>
             </div>
